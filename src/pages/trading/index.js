@@ -3,18 +3,21 @@ import {Button, Card, Col, Row, Table} from "reactstrap";
 
 const trading = () => {
     return(
-        <div>
-            <Row>
+        <div style={{margin:"30px", height:"100%", width:"100%"}}>
+            <Row style={{margin:"10px", height:"50%"}}>
                 <Col md={2}>
                     <Row>
-                        <Card>
-
-                        </Card>
+                        <Col>
+                            <Card style={{height : "100%"}}>
+                                sdfsdf
+                            </Card>
+                        </Col>
                     </Row>
                     <Row>
-                        <Card>
-                            <Table>
-                                <tbody>
+                        <Col>
+                            <Card style={{height : "100%"}}>
+                                <Table>
+                                    <tbody>
                                     <tr>
                                         <th>잔고</th>
                                         <td>1000000</td>
@@ -23,27 +26,61 @@ const trading = () => {
                                         <th>수익</th>
                                         <td>1000000</td>
                                     </tr>
-                                </tbody>
-                                <Button>API</Button>
-                            </Table>
-                        </Card>
+                                    </tbody>
+                                    <Button>API</Button>
+                                </Table>
+                            </Card>
+                        </Col>
                     </Row>
                 </Col>
                 <Col md={7}>
-                    <Card>
+                    <Card style={{height : "100%"}}>
                         dsfds
                     </Card>
                 </Col>
                 <Col md={3}>
-                    <Card>
-
+                    <Card style={{height : "100%"}}>
+                        <Table style={{padding:"10px"}}>
+                            <tbody>
+                            <tr>
+                                <td>28,000,000</td>
+                                <td>2.00</td>
+                                <td>2.00</td>
+                                <td>28,000,000</td>
+                            </tr>
+                            <tr>
+                                <td>28,000,000</td>
+                                <td>2.00</td>
+                                <td>2.00</td>
+                                <td>28,000,000</td>
+                            </tr>
+                            <tr>
+                                <td>28,000,000</td>
+                                <td>2.00</td>
+                                <td>2.00</td>
+                                <td>28,000,000</td>
+                            </tr>
+                            <tr>
+                                <td>28,000,000</td>
+                                <td>2.00</td>
+                                <td>2.00</td>
+                                <td>28,000,000</td>
+                            </tr>
+                            <tr>
+                                <td>28,000,000</td>
+                                <td>2.00</td>
+                                <td>2.00</td>
+                                <td>28,000,000</td>
+                            </tr>
+                            </tbody>
+                        </Table>
                     </Card>
                 </Col>
             </Row>
-            <Row>
+            <Row style={{margin:"10px", height:"50%"}}>
                 <Col md={2}>
-                    <Card>
-                        <Table>
+                    <Card style={{height : "100%"}}>
+                        <Table style={{padding:"10px"}}>
                             <thead>
                                 <th>항목</th>
                                 <th>설정값</th>
@@ -66,17 +103,68 @@ const trading = () => {
                                     <td>########</td>
                                 </tr>
                             </tbody>
-                            <Button>API</Button>
+                            <Button>수정</Button>
                         </Table>
                     </Card>
                 </Col>
                 <Col md={7}>
-                    <Card>
-
+                    <Card style={{height : "100%"}}>
+                        <Table style={{padding:"10px"}}>
+                            <thead>
+                            <th>종목</th>
+                            <th>거래 시간</th>
+                            <th>포지션</th>
+                            <th>수량</th>
+                            <th>가격</th>
+                            <th>수수료</th>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>#####</td>
+                                <td>##.##.##</td>
+                                <td>buy</td>
+                                <td>########</td>
+                                <td>########</td>
+                                <td>########</td>
+                            </tr>
+                            <tr>
+                                <td>#####</td>
+                                <td>##.##.##</td>
+                                <td>buy</td>
+                                <td>########</td>
+                                <td>########</td>
+                                <td>########</td>
+                            </tr>
+                            <tr>
+                                <td>#####</td>
+                                <td>##.##.##</td>
+                                <td>buy</td>
+                                <td>########</td>
+                                <td>########</td>
+                                <td>########</td>
+                            </tr>
+                            <tr>
+                                <td>#####</td>
+                                <td>##.##.##</td>
+                                <td>buy</td>
+                                <td>########</td>
+                                <td>########</td>
+                                <td>########</td>
+                            </tr>
+                            <tr>
+                                <td>#####</td>
+                                <td>##.##.##</td>
+                                <td>buy</td>
+                                <td>########</td>
+                                <td>########</td>
+                                <td>########</td>
+                            </tr>
+                            </tbody>
+                        </Table>
                     </Card>
                 </Col>
                 <Col md={3}>
-                    <Card>
+                    <Card style={{height : "100%"}}>
 
                     </Card>
                 </Col>
