@@ -1,19 +1,20 @@
 import React, {useEffect, useState} from "react";
 import {Button, Card, Col, Row, Table} from "reactstrap";
+import Api_modal from "./api-modal";
 
 const trading = () => {
     return(
         <div style={{margin:"30px", height:"100%", width:"100%"}}>
             <Row style={{margin:"10px", height:"50%"}}>
                 <Col md={2}>
-                    <Row>
+                    <Row style={{height : "50%"}}>
                         <Col>
                             <Card style={{height : "100%"}}>
                                 sdfsdf
                             </Card>
                         </Col>
                     </Row>
-                    <Row>
+                    <Row style={{height : "50%"}}>
                         <Col>
                             <Card style={{height : "100%"}}>
                                 <Table>
@@ -27,8 +28,9 @@ const trading = () => {
                                         <td>1000000</td>
                                     </tr>
                                     </tbody>
-                                    <Button>API</Button>
                                 </Table>
+                                <Api_modal/>
+
                             </Card>
                         </Col>
                     </Row>
