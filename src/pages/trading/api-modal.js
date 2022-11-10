@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import {Button, Modal, ModalHeader, ModalBody, ModalFooter, Col, Row, Input, Card} from 'reactstrap';
+import {Route} from "react-router-dom";
 
 function Api_modal(args) {
     const [modal, setModal] = useState(false);
@@ -9,18 +10,35 @@ function Api_modal(args) {
     return (
         <div>
             <Button onClick={toggle}>
-                Click Me
+                API 관리
             </Button>
-            <Modal size={"lg"} isOpen={modal} toggle={toggle} {...args}>
+            <Modal isOpen={modal} toggle={toggle} {...args}>
                 <ModalHeader toggle={toggle}>API</ModalHeader>
                 <ModalBody>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
+                    <div>
+                        <Col>
+                            <br/>
+                            <Row>
+                                <Card>
+                                    <h3>Upbit</h3>
+                                    <Input placeholder={"Access Key"}/>
+                                    <Input placeholder={"Secret Key"}/>
+                                    <Button>API 값 확인</Button>
+                                </Card>
+                            </Row>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <Row>
+                                <Card>
+                                    <h3>Bithumb</h3>
+                                    <Input placeholder={"Connect Key"}/>
+                                    <Input placeholder={"Secret Key"}/>
+                                    <Button>API 값 확인</Button>
+                                </Card>
+                            </Row>
+                        </Col>
+                    </div>
                 </ModalBody>
                 <ModalFooter>
                     <Button color="primary" onClick={toggle}>
